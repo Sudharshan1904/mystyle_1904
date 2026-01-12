@@ -256,6 +256,49 @@
     width: 280px;
   }
 }
+/* ---------- PROJECT PAGE ---------- */
+.project-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+.project-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+.project-card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 16px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h2 {
+  margin-bottom: 10px;
+  color: #1f2933;
+}
+
+.project-card p {
+  color: #374151;
+}
+
+.project-card ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.project-card li {
+  margin-bottom: 8px;
+}
+
+.tech {
+  font-weight: 600;
+  color: #6366f1;
+}
+
 
 /* ---------- MOBILE PORTRAIT (PHONES) ---------- */
 @media (max-width: 600px) {
