@@ -5,17 +5,35 @@ function Main() {
   const [showResume, setShowResume] = useState(false);
 
   return (
-    <div className="main">
+    <div className="main-content">
       <div className="text">
         <h1>
-          I am <br /> a Designer
+          Hi, I’m <br /> <span>Sudharshan</span>
         </h1>
 
-        <button onClick={() => setShowResume(true)}>
-          View Resume
-        </button>
+        <p>
+          A passionate <strong>Web Designer & Frontend Developer</strong> who
+          loves creating clean, responsive, and user-friendly web interfaces.
+          I focus on modern design principles and real-world usability.
+        </p>
+
+        <div className="home-actions">
+          <button onClick={() => setShowResume(true)}>
+            View Resume
+          </button>
+
+          <a
+            href="https://github.com/Sudharshan1904"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="secondary-btn"
+          >
+            GitHub Profile
+          </a>
+        </div>
       </div>
 
+      {/* Resume Popup */}
       {showResume && (
         <div className="resume-overlay">
           <div className="resume-modal">
