@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
   const whatsappNumber = "919080133622";
-  const message = "Hi Sudharshan, I visited your portfolio and would like to connect.";
+  const message = "vanakkam da mapla";
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     message
