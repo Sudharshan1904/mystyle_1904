@@ -256,3 +256,100 @@
     width: 280px;
   }
 }
+
+/* ---------- MOBILE PORTRAIT (PHONES) ---------- */
+@media (max-width: 600px) {
+
+  /* Stack layout vertically */
+  .container {
+    flex-direction: column;
+  }
+
+  /* Sidebar becomes top section */
+  .sidebar {
+    width: 100%;
+    padding: 20px 15px;
+    box-shadow: none;
+  }
+
+  .sidebar img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .sidebar h2 {
+    font-size: 18px;
+  }
+
+  .role {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  /* Menu becomes horizontal */
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .menu li {
+    margin: 0;
+  }
+
+  .menu a {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  /* Main content */
+  .main {
+    padding: 25px 15px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  /* Text scaling */
+  .text h1 {
+    font-size: 36px;
+    line-height: 1.3;
+  }
+
+  .text p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .text button {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+
+  /* Image scaling */
+  .image img {
+    width: 220px;
+  }
+
+  /* Contact page fix */
+  .contact-wrapper {
+    padding: 20px 10px;
+  }
+
+  .contact-card {
+    padding: 25px 18px;
+  }
+
+  .contact-card h1 {
+    font-size: 24px;
+  }
+
+  .contact-item {
+    font-size: 14px;
+  }
+}
+
