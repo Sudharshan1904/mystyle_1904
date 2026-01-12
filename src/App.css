@@ -1,0 +1,258 @@
+/* ---------- GLOBAL LAYOUT ---------- */
+.container {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6f9;
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #c0c8d7, #a9b3c8);
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.sidebar h2 {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #1f2933;
+}
+
+.role {
+  color: #4b5563;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* ---------- MENU ---------- */
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 12px 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #1f2933;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.4);
+  color: #111827;
+  transform: translateX(5px);
+}
+
+/* ---------- MAIN CONTENT ---------- */
+.main {
+  flex: 1;
+  padding: 60px;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* ---------- TEXT ---------- */
+.text h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111827;
+}
+
+.text p {
+  margin: 20px 0;
+  color: #374151;
+  font-size: 16px;
+  max-width: 450px;
+}
+
+.text button {
+  padding: 14px 32px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.text button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(99, 102, 241, 0.4);
+}
+
+/* ---------- IMAGE ---------- */
+.image img {
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+}
+
+/* ---------- CONTACT SECTION ---------- */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.contact-card {
+  background: white;
+  padding: 45px;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  animation: fadeUp 0.6s ease;
+}
+
+.contact-card h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.contact-sub {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 16px;
+  color: #374151;
+  margin-bottom: 18px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+.contact-item span {
+  font-size: 22px;
+}
+
+.contact-item:hover {
+  background: #eef2ff;
+  transform: translateX(5px);
+}
+
+.contact-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #58e542, #25d843);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(74, 244, 52, 0.4);
+
+}
+.whatsapp-link {
+  color: #25D366; /* WhatsApp green */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.whatsapp-link:hover {
+  color: #128C7E;
+  text-decoration: underline;
+}
+
+/* ---------- RESUME POPUP ---------- */
+.resume-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.resume-modal {
+  background: white;
+  width: 70%;
+  height: 85%;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  animation: fadeUp 0.4s ease;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #dc2626;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .resume-modal {
+    width: 90%;
+    height: 80%;
+  }
+}
+
+
+
+
+
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image img {
+    width: 280px;
+  }
+}
