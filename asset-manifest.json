@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mystyle_1904/static/css/main.f1a08858.css",
+    "main.js": "/mystyle_1904/static/js/main.79193726.js",
+    "static/media/sudhan.pdf": "/mystyle_1904/static/media/sudhan.18e95acf6194afd40083.pdf",
+    "static/media/profile.jpg": "/mystyle_1904/static/media/profile.d484ef5e87819dafe9a7.jpg",
+    "index.html": "/mystyle_1904/index.html",
+    "main.f1a08858.css.map": "/mystyle_1904/static/css/main.f1a08858.css.map",
+    "main.79193726.js.map": "/mystyle_1904/static/js/main.79193726.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1a08858.css",
+    "static/js/main.79193726.js"
+  ]
+}
