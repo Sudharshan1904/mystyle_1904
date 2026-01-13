@@ -28,12 +28,12 @@ function Main() {
             rel="noopener noreferrer"
             className="secondary-btn"
           >
-            GitHub Profile
+           <button> GitHub Profile</button>
           </a>
         </div>
       </div>
 
-      {/* Resume Popup */}
+      
       {showResume && (
         <div className="resume-overlay">
           <div className="resume-modal">
